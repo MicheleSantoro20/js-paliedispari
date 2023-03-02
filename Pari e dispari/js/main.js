@@ -1,4 +1,4 @@
-
+// Sistema controllo di Pari e dispari
 let sceltaOddEven;
 let i = 0;
 
@@ -13,7 +13,7 @@ while (i < 1) {
   
 };
 
-
+//Sistema di scelte dell'utente e numero casuale del computer
 let pariDispariUser = sceltaOddEven;
 let numeroUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
 let computer = numerocasuale (); 
@@ -47,7 +47,7 @@ function evenOdd (somma) {
     return risultato;
 };
 
-
+//Esito (se vittoria o sconfitta)
 
 if (risultato == 'Pari' && pariDispariUser == 'Pari') {
     console.log ('Hai vinto!');

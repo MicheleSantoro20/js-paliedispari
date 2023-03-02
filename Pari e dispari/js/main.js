@@ -4,9 +4,7 @@ let i = 0;
 
 while (i < 1) {
     sceltaOddEven = prompt ('Scegli Pari o Dispari');
-    if (sceltaOddEven == 'Pari') {
-        i++;
-    }else if (sceltaOddEven == 'Dispari') {
+    if (sceltaOddEven == 'Pari' || sceltaOddEven == 'Dispari') {
         i++;
     };
 };

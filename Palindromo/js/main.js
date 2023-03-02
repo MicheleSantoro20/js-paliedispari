@@ -1,40 +1,25 @@
 let parolaUtente = prompt ('inserisci una parola')
 
-let risultato = numeroPalindromo ();
+let risultato = numeroPalindromo (parolaUtente);
 console.log(risultato)
 
 
-function numeroPalindromo () {
+function numeroPalindromo (parolaUtente) {
 
     let palindromo;
-    let i = 0;
+    let i = parolaUtente[0];
+    let d = parolaUtente.length - 1;
 
-    while (i < 1) {
-        if (parolaUtente.length = 2 && parolaUtente[0] == parolaUtente[1]) {
-            console.log ('palindromo');
-            i++
-        }else if (parolaUtente.length = 3 && parolaUtente[0] == parolaUtente[2]) {
-            console.log ('palindromo');
+    while (i <= parolaUtente.length - 1) {
+     
+        if (i == d) {
             i++;
-        }else if (parolaUtente.length = 4 && parolaUtente[0] == parolaUtente[3] && parolaUtente[1] == parolaUtente[2]) {
-            console.log ('palindromo');
-            i++;
-        }else if (parolaUtente.length = 5 && parolaUtente[0] == parolaUtente[4] && parolaUtente[1] == parolaUtente[3]) {
-            console.log ('palindromo');
-            i++;
-        }else if (parolaUtente.length = 6 && parolaUtente[0] == parolaUtente[5] && parolaUtente[1] == parolaUtente[4] && parolaUtente[2] == parolaUtente[3]) {
-            console.log ('palindromo');
-            i++;
-        }else if (parolaUtente.length = 7 && parolaUtente[0] == parolaUtente[6] && parolaUtente[1] == parolaUtente[5] && parolaUtente[2] == parolaUtente[4]) {
-            console.log ('palindromo');
-            i++;
-        }else if (parolaUtente.length = 8 && parolaUtente[0] == parolaUtente[7] && parolaUtente[1] == parolaUtente[6] && parolaUtente[2] == parolaUtente[5] && parolaUtente[3] == parolaUtente[6]) { 
-            console.log ('palindromo');
-            i++;
+            d--;
+            console.log ('palindromo')
         } else {
-            console.log ('non palindromo')
-        }
-        ;
-    };
+            console.log = 'non è palindromno';
+        };
+        i++;
+    }
 
 }

@@ -1,3 +1,20 @@
+
+let sceltaOddEven;
+let i = 0;
+
+while (i < 1) {
+    sceltaOddEven = prompt ('Scegli Pari o Dispari');
+    if (sceltaOddEven == 'Pari') {
+        i++;
+    }else if (sceltaOddEven == 'Dispari') {
+        i++;
+    };
+
+  
+};
+
+
+let pariDispariUser = sceltaOddEven;
 let numeroUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
 let computer = numerocasuale (); 
 
@@ -10,21 +27,36 @@ function numerocasuale () {
 };
 
 
-//Condizione di vittoria = Pari vince l'utente, dispari vince il computer
-
 let somma = numeroUser + computer;
 console.log ('somma = ' + somma);
 
-let vincitore = evenOdd (somma);
+let risultato = evenOdd (somma);
 
 function evenOdd (somma) {
 
+    let risultato;
+
     if (somma % 2 == 0) {
-        console.log ('il numero è ' + somma + ' il vincitore sei tu!');
+        console.log ('Il numero è pari!');
+        risultato = 'Pari'
     } else {
-        console.log ('il numero è ' + somma + ' il vincitore è il computer')
+        console.log ('Il numero è dispari');
+        risultato = 'Dispari'
     };
 
+    return risultato;
 };
+
+
+
+if (risultato == 'Pari' && pariDispariUser == 'Pari') {
+    console.log ('Hai vinto!');
+} else if (risultato == 'Dispari' && pariDispariUser == 'Dispari'){
+    console.log ('Hai vinto!');
+} else {
+    console.log ('Hai perso!')
+};
+
+
  
 

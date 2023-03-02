@@ -9,27 +9,23 @@ while (i < 1) {
     }else if (sceltaOddEven == 'Dispari') {
         i++;
     };
-
-  
 };
 
 //Sistema di controllo dei numeri
 
-let numeroScelto;
+let numeroUser;
 let d = 0;
 
-while (d < 5) {
-    let numeroUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
-    if (numeroUser < 5) {
-        console.log('scelta numero corretta')
-        i++
+while (d < 1) {
+    numeroUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
+    if (numeroUser <= 5 && numeroUser > 0 ) {
+        d++;
     };
 };
 
 // Tutte le nostre scelte e la scelta casuale del computer
 
 let pariDispariUser = sceltaOddEven;
-let numeroUser = numeroScelto; 
 let computer = numerocasuale (); 
 
 console.log (numeroUser);

@@ -13,9 +13,23 @@ while (i < 1) {
   
 };
 
-//Sistema di scelte dell'utente e numero casuale del computer
+//Sistema di controllo dei numeri
+
+let numeroScelto;
+let d = 0;
+
+while (d < 5) {
+    let numeroUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
+    if (numeroUser < 5) {
+        console.log('scelta numero corretta')
+        i++
+    };
+};
+
+// Tutte le nostre scelte e la scelta casuale del computer
+
 let pariDispariUser = sceltaOddEven;
-let numeroUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
+let numeroUser = numeroScelto; 
 let computer = numerocasuale (); 
 
 console.log (numeroUser);

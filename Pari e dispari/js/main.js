@@ -1,7 +1,7 @@
 let numeroUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
 let computer = numerocasuale (); 
 
-console.log (numeroUser)
+console.log (numeroUser);
 console.log  (computer);
 
 function numerocasuale () {
@@ -13,10 +13,11 @@ function numerocasuale () {
 //Condizione di vittoria = Pari vince l'utente, dispari vince il computer
 
 let somma = numeroUser + computer;
-console.log ('somma = ' + somma)
+console.log ('somma = ' + somma);
 
+let vincitore = evenOdd (somma);
 
-function vincitore (somma) {
+function evenOdd (somma) {
 
     if (somma % 2 == 0) {
         console.log ('il numero è ' + somma + ' il vincitore sei tu!');
@@ -25,5 +26,5 @@ function vincitore (somma) {
     };
 
 };
+ 
 
-console.log (vincitore(somma));
